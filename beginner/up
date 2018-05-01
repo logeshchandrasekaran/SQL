@@ -1,0 +1,9 @@
+create database employee;
+use employee;
+create table details(name varchar(50),age int,state varchar(50),salary bigint);
+insert into details values("ramesh",32,"ahmedabad",2000),("khilan",25,"delhi",1500),("kaushik",23,"kota",2000);
+insert into details values("chaitali",25,"mumbai",6500),("hardik",27,"bhopal",8500),("komal",22,"mp",4500);
+insert into details values("indore",24,"indore",10000);
+select * from details;
+update details set state="maharashtra" where name="komal";
+select * from details;
